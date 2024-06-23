@@ -1,0 +1,16 @@
+v2:
+  label: v2
+  permalink: /v2
+  description: Facebook tag description
+updates:
+  label: update
+  permalink: /updates
+  description: Hello tag description
+horizon:
+  label: horizon
+  permalink: /horizon
+  description: Horizon tag description
+announcement:
+  label: announcement
+  permalink: /announcements
+  description: Hola tag description

@@ -1,0 +1,107 @@
+/* Updated header styling */
+.header {
+  background-color: var(--ifm-background-color); /* Replace with your background color */
+  color: var(--ifm-font-color-base); /* Replace with your font color */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
+.header-title {
+  font-size: 3rem; /* Adjust font size as needed */
+  margin-bottom: 1rem; /* Space below the title */
+}
+
+/* Add styles for features */
+.features {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Center items horizontally */
+  min-height: 100vh;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* styles.module.css */
+.featureSvg {
+  /* Ensure the image displays at its intrinsic size */
+  width: auto;
+  height: auto;
+  max-width: 100%; /* Ensure it doesn't exceed its container's width */
+  max-height: 100%; /* Ensure it doesn't exceed its container's height */
+  margin-bottom: 1rem; /* Space between image and text */
+}
+
+/* Remove the following block if you don't want the zoom effect
+.featureSvg:hover {
+  transform: scale(1.1); // Zoom effect on hover
+}
+*/
+
+
+.featureSvg:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.callToActionBox {
+  background-color: var(--ifm-background-color);
+  border: 1px solid var(--ifm-border-color);
+  border-radius: var(--ifm-global-radius);
+  padding: 2rem;
+  box-shadow: var(--ifm-global-shadow);
+  margin-top: 3rem;
+}
+
+.callToActionBox h3 {
+  margin-bottom: 1rem;
+}
+
+.callToActionBox p {
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* styles.module.css */
+.hero {
+  background-color: #7e7e7e; /* Replace with your desired background color */
+  color: #fff; /* Replace with your desired text color */
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 3rem; /* Adjust font size as needed */
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  margin-bottom: 2rem;
+}
+
+.heroActions {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
+
+.button {
+  margin-left: 10px; /* Adjust spacing */
+}
