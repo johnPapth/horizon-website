@@ -3,6 +3,7 @@ sidebar_position: 3
 ---
 
 # Configuration
+Discover how to efficiently configure Horizon's automations and access command information through Horizon Settings.
 
 ### What's settings?
 The settings command is crucial for customizing Horizon's behavior on your server. This command is likely one you'll use frequently. To get started, simply run the command `/settings` in any channel, if you have permissions to do so. You're the only one who can see this message.
