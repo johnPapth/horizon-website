@@ -61,7 +61,7 @@ function CallToAction() {
     <div className={clsx('col col--12')}>
       <div className={clsx('text--center', styles.callToActionBox)}>
         <Heading as="h3">Join the Adventure!</Heading>
-        <p>Join Horizon on Discord and start your astronomical journey today.</p>
+        <p>Add Horizon to your Discord server and start your astronomical journey today.</p>
         <a
           className="button button--primary button--lg"
           href="https://invite.horizonbot.xyz"
