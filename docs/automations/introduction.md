@@ -10,15 +10,35 @@ sidebar_position: 1
 Automations are the feature we are most proud of because they allow you to learn everything humanity has achieved in our solar system and beyond. They showcase our intelligence and the relentless human spirit striving to understand our existence.
 
 ### How to enable Automations?
-All servers that have invited Horizon can enable automations. We offer five different automations:
+Enabling any automation is straightforward. Use the command `/automations` and select the function you wish to enable with the `Enable Function` option. You can include the optional `channel` value for specific channel activation.
 
+:::info
+We offer five different automations:
 - Articles: Announces all the newest news.
 - Blogs: Travel through the universe with engaging blogs.
 - Reports: Get the latest ISS reports from the astronauts' orbiting home.
 - Next Launches: Stay informed about upcoming space launches.
 - Next Events: Learn about significant space events visible to everyone.
+:::
+:::note
+Example: `/automations action:Enable Function function:APOD Automation channel:#my-channel`
+:::
 
-Server administrators can enable these options using the command `/automations` and customize them using the command `/settings`. For more helpful guides, use the command `/help` and select the corresponding command.
+### How to disable Automations?
+Disabling an automation follows a similar process. Use the command `/automations` and select the function you want to disable with the `Disable Function` option. The `channel` option is not required and can be ignored. Additionally, automations can also be disabled using the `/settings` command and navigating to the selected automation.
+
+:::info
+We offer five different automations:
+- Articles: Announces all the newest news.
+- Blogs: Travel through the universe with engaging blogs.
+- Reports: Get the latest ISS reports from the astronauts' orbiting home.
+- Next Launches: Stay informed about upcoming space launches.
+- Next Events: Learn about significant space events visible to everyone.
+:::
+
+:::note
+Example: `/automations action:Disable Function function:APOD Automation`
+:::
 
 ### Are Automations in BETA?
 **Yes, automations are still in BETA, and as a feature that we are most proud of, we make frequent improvements.**
