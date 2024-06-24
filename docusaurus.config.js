@@ -135,7 +135,7 @@ const config = {
               },
               {
                 label: 'Privacy Policy',
-                to: '/policy',
+                to: '/privacy',
               },
 
             ],
