@@ -97,7 +97,7 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/intro',
+                to: '/docs/welcome',
               },
               {
                 label: 'Status Page',
