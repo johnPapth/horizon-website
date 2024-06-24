@@ -1,16 +1,16 @@
 v2:
   label: v2
   permalink: /v2
-  description: Facebook tag description
+  description: Articles & Blogs related to Horizon V2 Cosmos Update
 updates:
   label: update
   permalink: /updates
-  description: Hello tag description
+  description: Articles & Blogs related to new Horizon Updates
 horizon:
   label: horizon
   permalink: /horizon
-  description: Horizon tag description
+  description: Articles & Blogs Related to Horizon
 announcement:
   label: announcement
   permalink: /announcements
-  description: Hola tag description
+  description: Annoucement Articles & Blogs from Atlas Teams
