@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 # Introduction
+Learn how Automations in Horizon streamline notifications and explore the basics of Horizon's API for integration and enhanced functionality.
 
 ### Why Automations? What's this?
 **The answer we give is simple:** to inspire dreams, to help people appreciate themselves, and to remind us how small we are in the vast universe. To live each day as something unique, knowing that not all planets have life. Some people will never die since they never get the chance to be born.
