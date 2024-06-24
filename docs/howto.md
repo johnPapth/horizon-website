@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 # Information
+Learn how to contribute to Horizon, get support, and find useful information to optimize your Discord astronomy experience.
+
 ## How to Invite Horizon?
 
 You can invite Horizon to your Discord community or friends' server by [clicking here](https://invite.horizonbot.xyz). This will redirect you to Discord where you can select the server you want to add the bot to. Please make sure to check our [Terms of Service](https://horizonbot.xyz/terms) and [Privacy Policy](https://horizonbot.xyz/privacy) before continuing.
