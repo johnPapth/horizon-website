@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 # Documentation
+Explore comprehensive documentation containing all the essential information about Horizon's application and its commands.
 
 ## 👋 Welcome to Horizon Documentation
 
