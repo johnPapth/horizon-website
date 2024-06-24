@@ -18,6 +18,7 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'AtlasDevGroup', // Usually your GitHub org/user name.
@@ -57,6 +58,15 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      defaultMode: "dark",
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'Check out the official Horizon APP <a target="_blank" rel="noopener noreferrer" href="https://discord.com/application-directory/1183177251316047983">Discord Discovery</a> Page',
+        backgroundColor: '#272728',
+        textColor: '#fafbfc',
+        isCloseable: true,
+      },
       image: 'img/header.jpg',
       navbar: {
         logo: {
@@ -93,6 +103,10 @@ const config = {
                 label: 'Status Page',
                 href: 'https://status.teamatlas.dev',
               },
+              {
+                label: 'Vote Horizon',
+                href: 'https://top.gg/bot/1183177251316047983/vote',
+              },
             ],
           },
           {
@@ -122,6 +136,7 @@ const config = {
 
             ],
           },
+          
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Horizon, made with ❤️ by teamatlas.dev (📧 info@teamatlas.dev)`,
       },
