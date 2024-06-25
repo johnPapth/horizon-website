@@ -50,7 +50,7 @@ const DocumentationList = [
     link: '/docs/information',
   },
   {
-    title: 'Automations Introduction',
+    title: 'Horizon Automations',
     subtitle: 'Setup notifications for next space launches and events.',
     description: 'Learn how Automations in Horizon streamline notifications and explore the basics of Horizon\'s API.',
     link: '/docs/automations/introduction',
