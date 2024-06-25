@@ -18,7 +18,7 @@ const FeatureList = [
     description: (
       <>
         New space pictures, Mars rover snapshots, and more directly on your server. 
-        Explore the the universe with your community!
+        Explore the universe with your community!
       </>
     ),
   },
@@ -42,6 +42,27 @@ const FeatureList = [
   },
 ];
 
+const DocumentationList = [
+  {
+    title: 'Welcome to Horizon',
+    subtitle: 'Explore Horizon and its features.',
+    description: 'Get started with Horizon. Learn about its features, how to use it, and much more.',
+    link: '/docs/welcome',
+  },
+  {
+    title: 'Setup Guide',
+    subtitle: 'Setup Horizon with your Discord server.',
+    description: 'Follow the setup guide to integrate Horizon with your Discord server seamlessly.',
+    link: '/docs/setup',
+  },
+  {
+    title: 'Advanced Features',
+    subtitle: 'Discover advanced capabilities of Horizon.',
+    description: 'Explore the advanced features of Horizon and learn how to use them to their full potential.',
+    link: '/docs/advanced',
+  },
+];
+
 function Feature({ image, title, description }) {
   return (
     <div className={clsx('col col--12', styles.feature)}>
@@ -50,20 +71,61 @@ function Feature({ image, title, description }) {
         <p>{description}</p>
       </div>
       <div className="text--center">
-        <img src={image} alt={title} className={styles.featureSvg} /> {/* Ensure correct className */}
+        <img src={image} alt={title} className={styles.featureSvg} />
       </div>
     </div>
   );
 }
 
+import NewImage from '@site/static/img/new.png';
+function Documentation({ title, subtitle, description, link }) {
+  return (
+    <div className={clsx(styles.documentationSection)}>
+      <div className="text--center">
+        <Heading as="h3" className={styles.documentationTitle}>
+          Documentation
+          <img src={NewImage} alt="New Feature" className={styles.newFeatureImage} />
+        </Heading>
+        <p className={styles.documentationCategory}>Learn more about Horizon's features and setup.</p>
+      </div>
+      <div className={clsx('documentationContainer', styles.documentationContainer)}>
+        {DocumentationList.map((props, idx) => (
+          <DocumentationBox key={idx} {...props} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
+function DocumentationBox({ title, subtitle, description, link }) {
+  return (
+    <div className={clsx(styles.documentationBox)}>
+      <Heading as="h4">{title}</Heading>
+      <p className={styles.documentationSubtitle}>{subtitle}</p>
+      <p>{description}</p>
+      <a className={styles.docLink} href={link}>
+        Read more
+      </a>
+    </div>
+  );
+}
+
+// Import star SVG images
+import StarLeftBottom from '@site/static/img/star.png';
+import StarRightTop from '@site/static/img/star.png';
+
 function CallToAction() {
   return (
-    <div className={clsx('col col--12')}>
+    <div className={clsx('col col--12', styles.callToActionContainer)}>
+      {/* Star PNG image at bottom left */}
+      <img src={StarLeftBottom} alt="Star" className={styles.starLeftBottom} />
+      
       <div className={clsx('text--center', styles.callToActionBox)}>
         <Heading as="h3">Join the Adventure!</Heading>
         <p>Add Horizon to your Discord server and start your astronomical journey today.</p>
         <a
-          className="button button--primary button--lg"
+          className={clsx('button', 'button--primary', 'button--lg', styles.zoomOnHover)}
           href="https://invite.horizonbot.xyz"
           target="_blank"
           rel="noopener noreferrer"
@@ -71,9 +133,13 @@ function CallToAction() {
           Invite Horizon
         </a>
       </div>
+
+      {/* Star PNG image at top right */}
+      <img src={StarRightTop} alt="Star" className={styles.starRightTop} />
     </div>
   );
 }
+
 
 export default function HomepageFeatures() {
   return (
@@ -83,6 +149,9 @@ export default function HomepageFeatures() {
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
+        </div>
+        <div className="row">
+          <Documentation />
         </div>
         <div className="row">
           <CallToAction />
