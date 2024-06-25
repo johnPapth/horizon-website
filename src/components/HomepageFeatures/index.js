@@ -51,13 +51,13 @@ const DocumentationList = [
   },
   {
     title: 'Automations Introduction',
-    subtitle: 'Setup notifications for next space events.',
+    subtitle: 'Setup notifications for next space launches and events.',
     description: 'Learn how Automations in Horizon streamline notifications and explore the basics of Horizon\'s API.',
     link: '/docs/automations/introduction',
   },
   {
     title: 'Horizon Settings',
-    subtitle: 'Manage and customize your server settings and notifications',
+    subtitle: 'Manage and customize your server settings and notifications.',
     description: 'Discover how to efficiently customize Horizon\'s automations and manage your server through Horizon Settings.',
     link: '/docs/automations/configuration',
   },
