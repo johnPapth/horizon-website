@@ -19,7 +19,7 @@
 .discordLogo {
   height: 22px; /* Adjust the height as needed */
   margin-bottom: -3.5px; /* Adjust the margin to move it down */
-  margin-right: 2.5px; /* Adjust the margin to create space between image and text */
+  margin-right: 5px; /* Adjust the margin to create space between image and text */
 }
 
 
@@ -66,8 +66,42 @@
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+/* Keyframes for up and down animation */
+@keyframes astronautUpAndDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust distance for movement */
   }
 }
+
+/* Default styles */
+.astronaut1,
+.astronaut2 {
+  position: absolute;
+  display: none; /* Hide by default */
+}
+
+/* Media query for desktop screens */
+@media screen and (min-width: 1200px) {
+  .astronaut1 {
+    position: absolute;
+    top: 150px; /* Adjust top position as needed */
+    left: 80px; /* Adjust left position as needed */
+    max-width: 130px; /* Adjust size as needed */
+    display: block; /* Show on desktop screens */
+    animation: astronautUpAndDown 3s ease-in-out infinite; /* Apply animation */
+  }
+}
+
+  .astronaut2 {
+    position: absolute;
+    top: 680px; /* Adjust top position as needed */
+    right: 80px; /* Adjust right position as needed */
+    max-width: 130px; /* Adjust size as needed */
+    display: block; /* Show on desktop screens */
+    animation: astronautUpAndDown 3s ease-in-out infinite; /* Apply animation */
+  }
+
+
