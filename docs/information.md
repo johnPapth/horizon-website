@@ -27,7 +27,7 @@ Horizon then checks the database for new data and delivers it through commands a
 **UP-TO-DATE DATA TO HORIZON:**
 ```
 API Providers => Horizon API (FETCH) => Horizon API Database (SAVE) =>
-Horizon APP (GET) => Horizon APP Datasbe (SAVE) => Automations (SEND) && Commands Data (UPDATE)
+Horizon APP (GET) => Horizon APP Database (SAVE) => Automations (SEND) && Commands Data (UPDATE)
 ```
 
 # How can I support Horizon?
