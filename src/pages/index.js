@@ -7,6 +7,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import appBadgeImage from '@site/static/img/appbadge.png';
+import discordLogo from '@site/static/img/discord.png'; // Import the Discord logo image
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -27,7 +28,12 @@ function HomepageHeader() {
               className={clsx('button', 'button--secondary', 'button--lg', styles.buttonZoom)}
               href="https://invite.horizonbot.xyz"
             >
-              Start exploring the unknown! 🚀
+              <img
+                src={discordLogo}
+                alt="Discord Logo"
+                className={styles.discordLogo}
+              />{' '}
+              <span style={{ marginLeft: '4px', marginBottom: '-3.5px' }}>Start exploring the unknown</span>
             </Link>
           </div>
         </div>
