@@ -16,6 +16,12 @@
   min-height: 100vh; /* Ensure header covers the entire viewport height */
 }
 
+.discordLogo {
+  height: 22px; /* Adjust the height as needed */
+  margin-bottom: -3.5px; /* Adjust the margin to move it down */
+  margin-right: 2.5px; /* Adjust the margin to create space between image and text */
+}
+
 
 .hero-content {
   text-align: center;
