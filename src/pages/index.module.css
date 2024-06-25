@@ -7,8 +7,6 @@
   align-items: center;
   background-color: var(--header-background-color, #25C2A0);
   position: relative;
-
-  /* Add the background image with 50% opacity */
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
               url('/img/preview.jpg');
   background-size: cover;
@@ -17,7 +15,7 @@
 
 .hero-content {
   text-align: center;
-  color: #fff; /* Adjusted text color to white */
+  color: #fff; 
   position: relative;
   z-index: 1;
 }
@@ -26,28 +24,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem; /* Adjust margin below the title */
+  margin-bottom: 1rem; 
 }
 
 .hero__title_text {
-  color: #fff; /* White text color */
-  font-size: 2.5rem; /* Adjust font size for title */
+  color: #fff;
+  font-size: 2.5rem;
 }
 
 .hero__badge {
-  height: 60px; /* Increased height of the badge */
-  margin-left: 10px; /* Adjust spacing between badge and text */
+  height: 60px;
+  margin-left: 10px;
   vertical-align: middle;
 }
 
 .hero__subtitle {
-  color: #fff; /* White text color */
-  font-size: 1.25rem; /* Adjust font size for subtitle */
-  margin-bottom: 1.5rem; /* Adjust margin below the subtitle */
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .buttons {
   margin-top: 1rem;
+}
+
+.buttonZoom {
+  transition: transform 0.2s ease-in-out;
+}
+
+.buttonZoom:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 996px) {
