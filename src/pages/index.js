@@ -49,7 +49,9 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <div style={{ height: '4rem' }} /> {/* Adjust the height as needed */}
       </main>
     </Layout>
   );
 }
+
