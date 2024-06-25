@@ -35,7 +35,7 @@
 }
 
 .hero__badge {
-  height: 50px; /* Increased height of the badge */
+  height: 60px; /* Increased height of the badge */
   margin-left: 10px; /* Adjust spacing between badge and text */
   vertical-align: middle;
 }
