@@ -53,7 +53,7 @@ function HomepageHeader() {
                 alt="Discord Logo"
                 className={styles.discordLogo}
               />{' '}
-              <span style={{ marginLeft: '4px', marginBottom: '-3.5px' }}>Start exploring the unknown! 🚀</span>
+              <span style={{ marginLeft: '4px', marginBottom: '-3.5px' }}>Start exploring the unknown</span>
             </Link>
           </div>
         </div>
