@@ -2,7 +2,6 @@
 .header {
   background-color: var(--ifm-background-color); /* Replace with your background color */
   color: var(--ifm-font-color-base); /* Replace with your font color */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,7 +33,6 @@
   margin-bottom: 2rem;
 }
 
-/* styles.module.css */
 .featureSvg {
   /* Ensure the image displays at its intrinsic size */
   width: auto;
@@ -42,66 +40,157 @@
   max-width: 100%; /* Ensure it doesn't exceed its container's width */
   max-height: 100%; /* Ensure it doesn't exceed its container's height */
   margin-bottom: 1rem; /* Space between image and text */
+  transition: transform 0.3s ease-in-out; /* Transition for smooth effect */
 }
-
-/* Remove the following block if you don't want the zoom effect
-.featureSvg:hover {
-  transform: scale(1.1); // Zoom effect on hover
-}
-*/
-
 
 .featureSvg:hover {
-  transform: scale(1.1); /* Zoom effect on hover */
+  transform: scale(1.1); /* Zoom in slightly on hover */
 }
 
-.callToActionBox {
+
+.documentationSection {
+  text-align: center;
+  margin-bottom: 3rem; /* Add margin between Documentation section and Call to Action */
+}
+
+.documentationTitle {
+  margin-bottom: 1rem; /* Space below the Documentation title */
+}
+
+.documentationCategory {
+  font-size: 1.2rem; /* Font size for the category/subtitle */
+  color: #999999; /* Subtitle color */
+  margin-bottom: 1.5rem; /* Space below the subtitle */
+}
+
+.documentationContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Space between boxes */
+  overflow-x: auto; /* Enable horizontal scrolling if necessary */
+  padding-bottom: 1rem; /* Add padding to ensure space at the bottom */
+  padding-top: 2rem; /* Add padding at the top to provide space for hover effect */
+}
+
+.documentationBox {
   background-color: var(--ifm-background-color);
-  border: 1px solid var(--ifm-border-color);
-  border-radius: var(--ifm-global-radius);
-  padding: 2rem;
-  box-shadow: var(--ifm-global-shadow);
-  margin-top: 3rem;
-}
-
-.callToActionBox h3 {
-  margin-bottom: 1rem;
-}
-
-.callToActionBox p {
-  margin-bottom: 1.5rem;
-}
-
-.container {
-  min-height: 100vh;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  color: #ffffff;
+  width: 400px; /* Set width for desktop */
+  max-width: 100%; /* Ensure responsiveness */
+  flex-shrink: 0;
+  margin-bottom: 2rem; /* Add margin between boxes */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+.documentationBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.documentationBox h4 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.documentationBox .documentationSubtitle {
+  margin-top: -0.5rem; /* Adjust spacing between title and subtitle */
+  font-size: 1.2rem;
+  color: #cccccc; /* Subtitle color */
+}
+
+.documentationBox p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #ffffff;
+  flex: 1; /* Ensure text takes up remaining space */
+}
+
+.documentationBox a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  align-self: flex-end; /* Align link to the end of the box */
+  margin-top: auto; /* Push link to the bottom */
+}
+
+
+/* Adjust space between sections */
+.callToActionBox {
+  margin-top: 2rem; /* Increase margin between Documentation and Call to Action */
+}
+
+.documentationBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .documentationContainer {
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: center; /* Center items vertically */
+    padding-top: 0; /* Remove top padding */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .documentationBox {
+    width: calc(100% - 2rem); /* Full width minus padding */
+    margin-bottom: 1rem; /* Reduce margin between boxes on mobile */
+  }
+}
+
+.newFeatureImage {
+  height: 55px; /* Increased height of the badge */
+  margin-left: 10px; /* Adjust spacing between badge and text */
+  vertical-align: middle;
 }
 
 /* styles.module.css */
-.hero {
-  background-color: #7e7e7e; /* Replace with your desired background color */
-  color: #fff; /* Replace with your desired text color */
-  padding: 4rem 0;
-  text-align: center;
+
+/* Keep the stars' z-index unchanged */
+.starLeftBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  z-index: -1; /* Ensure stars are behind content */
 }
 
-.heroTitle {
-  font-size: 3rem; /* Adjust font size as needed */
-  margin-bottom: 1rem;
+.starRightTop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  z-index: -2; /* Ensure stars are behind content */
 }
 
-.heroSubtitle {
-  font-size: 1.5rem; /* Adjust font size as needed */
-  margin-bottom: 2rem;
+/* Adjust the zoomOnHover class */
+.zoomOnHover {
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+  position: relative; /* Ensure position is relative */
+  z-index: 1; /* Ensure button is above stars */
 }
 
-.heroActions {
-  display: flex;
-  justify-content: center; /* Center horizontally */
+.zoomOnHover:hover {
+  transform: scale(1.1); /* Zoom in by 10% on hover */
 }
 
-.button {
-  margin-left: 10px; /* Adjust spacing */
+/* Adjust the callToActionBox container */
+.callToActionContainer {
+  position: relative;
+  overflow: hidden; /* Ensure children don't overflow */
+}
+
+.callToActionBox {
+  position: relative;
+  z-index: 2; /* Ensure content is above stars */
+  margin-top: 4rem;
 }
