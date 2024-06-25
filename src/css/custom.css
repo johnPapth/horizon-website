@@ -30,14 +30,14 @@
 }
 
 .navbar {
-  background-color: rgba(128, 128, 128, 0); /* Gray with 0% opacity */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+  background-color: transparent; /* Transparent background */
+  box-shadow: none; /* Remove shadow */
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
 /* Navbar link styles */
 .navbar__link {
-  color: #000; /* Black text color for light mode */
+  color: #ffffff; /* White text color for light mode */
   transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color changes */
 }
 
@@ -47,19 +47,46 @@
   border-radius: 5px; /* Rounded corners for the hover effect */
 }
 
-
 /* Dark mode adjustments */
 [data-theme='dark'] .navbar {
-  background-color: rgba(60, 60, 60, 0.35); /* Darker gray with 35% opacity for dark mode */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for dark mode */
+  background-color: transparent; /* Transparent background */
+  box-shadow: none; /* Remove shadow */
 }
 
 [data-theme='dark'] .navbar__link {
-  color: #fff; /* White text color for contrast in dark mode */
+  color: #ffffff; /* White text color for dark mode */
 }
 
 [data-theme='dark'] .navbar__link:hover {
   color: #bbb; /* Change link color on hover in dark mode */
   background-color: rgba(255, 255, 255, 0.1); /* Subtle background color on hover in dark mode */
   border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+/* Make the footer background gradient from site background color to black */
+.footer {
+  background: linear-gradient(to bottom, var(--ifm-background-color) 0%, #000000 100%); /* Gradient from site background color to black */
+  color: #ffffff; /* White text color */
+}
+
+.footer a {
+  color: #ffffff; /* White link color */
+}
+
+.footer a:hover {
+  color: #cccccc; /* Light gray link color on hover */
+}
+
+/* Dark mode adjustments (if needed) */
+[data-theme='dark'] .footer {
+  background: linear-gradient(to bottom, var(--ifm-background-color) 0%, #000000 100%); /* Gradient from site background color to black */
+  color: #ffffff; /* White text color */
+}
+
+[data-theme='dark'] .footer a {
+  color: #ffffff; /* White link color */
+}
+
+[data-theme='dark'] .footer a:hover {
+  color: #cccccc; /* Light gray link color on hover */
 }
