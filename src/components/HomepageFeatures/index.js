@@ -47,19 +47,19 @@ const DocumentationList = [
     title: 'Welcome to Horizon',
     subtitle: 'Explore Horizon and its features.',
     description: 'Get started with Horizon. Learn about its features, how to use it, and much more.',
-    link: '/docs/welcome',
+    link: '/docs/information',
   },
   {
-    title: 'Setup Guide',
-    subtitle: 'Setup Horizon with your Discord server.',
-    description: 'Follow the setup guide to integrate Horizon with your Discord server seamlessly.',
-    link: '/docs/setup',
+    title: 'Automations Introduction',
+    subtitle: 'Setup notifications for next space events.',
+    description: 'Learn how Automations in Horizon streamline notifications and explore the basics of Horizon\'s API.',
+    link: '/docs/automations/introduction',
   },
   {
-    title: 'Advanced Features',
-    subtitle: 'Discover advanced capabilities of Horizon.',
-    description: 'Explore the advanced features of Horizon and learn how to use them to their full potential.',
-    link: '/docs/advanced',
+    title: 'Horizon Settings',
+    subtitle: 'Manage and customize your server settings and notifications',
+    description: 'Discover how to efficiently customize Horizon\'s automations and manage your server through Horizon Settings.',
+    link: '/docs/automations/configuration',
   },
 ];
 
