@@ -142,7 +142,7 @@ const config = {
           },
           
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Horizon, made with ❤️ by teamatlas.dev (📧 info@teamatlas.dev)`,
+        copyright: `© ${new Date().getFullYear()} Horizon. All rights reserved. Not affiliated with Discord Inc.`,
       },
       prism: {
         theme: prismThemes.github,
