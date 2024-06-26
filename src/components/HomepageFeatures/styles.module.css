@@ -70,6 +70,7 @@
   overflow-x: auto; /* Enable horizontal scrolling if necessary */
   padding-bottom: 1rem; /* Add padding to ensure space at the bottom */
   padding-top: 2rem; /* Add padding at the top to provide space for hover effect */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 .documentationBox {
@@ -121,7 +122,6 @@
   margin-top: auto; /* Push link to the bottom */
 }
 
-
 /* Adjust space between sections */
 .callToActionBox {
   margin-top: 2rem; /* Increase margin between Documentation and Call to Action */
@@ -133,6 +133,20 @@
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .documentationContainer {
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: center; /* Center items vertically */
+    padding-top: 0; /* Remove top padding */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .documentationBox {
+    width: calc(100% - 2rem); /* Full width minus padding */
+    margin-bottom: 1rem; /* Reduce margin between boxes on tablet */
+  }
+}
+
 @media (max-width: 768px) {
   .documentationContainer {
     flex-direction: column; /* Stack boxes vertically */
