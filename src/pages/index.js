@@ -37,9 +37,9 @@ function HomepageHeader() {
       <div className="hero-content-container">
         <div className="hero-content">
           <div className={styles.hero__title}>
-            <Heading as="h1" className={styles.hero__title_text}>
-              Welcome to Horizon{' '}
-              <img src={appBadgeImage} alt="Horizon Badge" className={styles.hero__badge} />
+          <Heading as="h1" className={clsx(styles.hero__title_text, styles.responsiveTitle)}>
+                Welcome to Horizon{' '}
+                <img src={appBadgeImage} alt="Horizon Badge" className={styles.hero__badge} />
             </Heading>
           </div>
           <p className={styles.hero__subtitle}>{siteConfig.tagline}</p>
