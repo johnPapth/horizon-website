@@ -184,7 +184,7 @@ export default function HomepageFeatures() {
             <Feature key={idx} {...props} />
           ))}
         </div>
-        <div className="row">
+        <div style=" margin: 0 calc(var(--ifm-spacing-horizontal)*-1);">
           <Documentation />
         </div>
         <div className="row">
