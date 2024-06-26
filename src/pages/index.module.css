@@ -52,19 +52,38 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem; 
+  flex-wrap: wrap; /* Allow wrapping */
+  margin-bottom: 1rem;
+  gap: 10px; /* Add gap between elements */
 }
 
 .hero__title_text {
   color: #fff;
   font-size: 2.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .hero__badge {
   height: 60px;
   margin-left: 10px;
   vertical-align: middle;
+  margin-bottom: -10px; /* Adjust this value to move the image down */
 }
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .hero__title_text {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+  }
+
+  .hero__badge {
+    height: 40px; /* Adjust icon size for mobile */
+    margin-left: 5px; /* Adjust margin for better alignment */
+    margin-bottom: -5px; /* Adjust this value to move the image down on mobile */
+  }
+}
+
 
 .hero__subtitle {
   color: #fff;
