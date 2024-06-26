@@ -84,7 +84,7 @@
 }
 
 /* Media query for desktop screens */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1700px) {
   .astronaut1 {
     position: absolute;
     top: 150px; /* Adjust top position as needed */
