@@ -115,6 +115,12 @@ function DocumentationBox({ title, subtitle, description, link }) {
 import StarLeftBottom from '@site/static/img/star.png';
 import StarRightTop from '@site/static/img/star.png';
 
+// Import logo image for special thanks section
+import Developer from '@site/static/img/developer.png';
+import Alex from '@site/static/img/alex.png';
+import curious from '@site/static/img/curious.png';
+import michael from '@site/static/img/michael.png';
+
 function CallToAction() {
   return (
     <div className={clsx('col col--12', styles.callToActionContainer)}>
@@ -140,6 +146,34 @@ function CallToAction() {
   );
 }
 
+function SpecialThanks() {
+  const contributors = [
+    { name: 'Fyber', role: 'Head Developer', image: Developer },
+    { name: 'Alexander', role: 'Server Maintainer', image: Alex },
+    { name: 'CuriousAnalyst', role: 'Graphics Designer', image: curious },
+    { name: 'Michael', role: 'Developer & Tester', image: michael },
+  ];
+
+  return (
+    <div className={styles.specialThanksContainer}>
+      <div className={styles.specialThanks}>
+        <Heading as="h3" className={styles.specialThanksTitle}>Key Contributors</Heading>
+        <div className={styles.contributorsContainer}>
+          {contributors.map((contributor, idx) => (
+            <div key={idx} className={styles.contributorBox}>
+              <img src={contributor.image} alt={contributor.name} className={styles.contributorImage} />
+              <h4>{contributor.name}</h4>
+              <p>{contributor.role}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
 
 export default function HomepageFeatures() {
   return (
@@ -155,6 +189,9 @@ export default function HomepageFeatures() {
         </div>
         <div className="row">
           <CallToAction />
+        </div>
+        <div className="row">
+          <SpecialThanks />
         </div>
       </div>
     </section>
