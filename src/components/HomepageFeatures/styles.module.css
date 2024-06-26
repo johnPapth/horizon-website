@@ -10,6 +10,7 @@
   text-align: center;
 }
 
+
 .header-title {
   font-size: 3rem; /* Adjust font size as needed */
   margin-bottom: 1rem; /* Space below the title */
@@ -219,4 +220,94 @@
   position: relative;
   z-index: 2; /* Ensure content is above stars */
   margin-top: 4rem;
+}
+
+.specialThanksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100%; /* Ensure the container takes up full width */
+  text-align: center; /* Center align the text */
+}
+
+.specialThanks {
+  margin-top: 4rem;
+}
+
+.specialThanksTitle {
+  margin-bottom: 2rem;
+}
+
+.contributorsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 100%; /* Ensure it doesn't overflow */
+}
+
+.contributorBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+}
+
+.contributorImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.contributorImage:hover {
+  transform: rotate(10deg); /* Slight rotation */
+}
+
+@media (max-width: 768px) {
+  .contributorsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contributorBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+}
+
+.contributorImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contributorsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.contributorImage {
+  animation: pulse 2s infinite; /* Apply pulse effect */
 }
