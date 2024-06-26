@@ -149,7 +149,7 @@ function CallToAction() {
 function SpecialThanks() {
   const contributors = [
     { name: 'Fyber', role: 'Head Developer', image: Developer },
-    { name: 'Alexander', role: 'Server Maintainer', image: Alex },
+    { name: 'Alexander', role: 'Server Administrator', image: Alex },
     { name: 'CuriousAnalyst', role: 'Graphics Designer', image: curious },
     { name: 'Michael', role: 'Developer & Tester', image: michael },
   ];
