@@ -8,8 +8,8 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import appBadgeImage from '@site/static/img/appbadge.png';
 import discordLogo from '@site/static/img/discord.png'; // Import the Discord logo image
-import astronaut1 from '@site/static/img/astronaut.png'; // Import astronaut image 1
-import astronaut2 from '@site/static/img/astronaut2.png'; // Import astronaut image 2
+import astronaut1 from '@site/static/img/sparkles.png'; // Import astronaut image 1
+import astronaut2 from '@site/static/img/sparkles.png'; // Import astronaut image 2
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -17,7 +17,7 @@ function HomepageHeader() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1700); // Set breakpoint for larger desktop view
+      setIsDesktop(window.innerWidth >= 1600); // Set breakpoint for larger desktop view
     };
 
     // Initial check
