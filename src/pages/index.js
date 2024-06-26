@@ -17,7 +17,7 @@ function HomepageHeader() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1200); // Set breakpoint for larger desktop view
+      setIsDesktop(window.innerWidth >= 1700); // Set breakpoint for larger desktop view
     };
 
     // Initial check
